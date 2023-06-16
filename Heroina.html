@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Heroina</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.header {
+  padding: 20px;
+  text-align: center;
+  color: #7d2d27;
+  text-align: center;
+}
+
+                
+footer  
+                {
+                  background-color:#913b34;
+                  padding: 10px;
+                  text-align: center;
+                }
+.body{
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.subtitle{
+  text-align: center;
+  color: #913b34;
+}
+#menutoggle{
+  opacity: 0;
+}
+#menutoggle:checked + .menubtn > span {
+  transform: rotate(45deg);
+}
+#menutoggle:checked + .menubtn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menutoggle:checked + .menubtn > span::after{
+  top: 0;
+  transform: rotate(90deg);
+}
+#menutoggle:checked ~ .menubox {
+  left: 0 !important;
+}
+.menubtn{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menubtn > span, .menubtn > span::before, .menubtn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #616161;
+  transition-duration: .25s;
+}
+.menubtn > span::before{
+  content: '';
+  top: -8px;
+}
+.menubtn > span::after{
+  content: '';
+  top: 8px;
+}
+.menubox {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background: #ECEFF1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menuitem {
+  display: block;
+  padding: 12px 24px;
+  color: #5C4033;
+  font-family: Courier;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menuitem:hover {
+  background: #802222;
+  color: white;
+}
+.responsive{
+  max-width: 25%;
+  height: auto;
+}
+</style>
+</head>
+
+<body style = "font-family: Courier; background: #EADDCA;">
+  <div>
+      <header style="text-align: center; border-color: #705041; border-width: 5px; border-style: none none solid none; padding: 10px; width: 100%;">
+        <h1>CETis No.108</h1>
+        <p><strong>Centro de Estudios Tecnológicos, Industrial y de Servicios No.108</strong></p>
+      </header>
+    </div>
+  <div class="menu">
+    <input id="menutoggle" type="checkbox"/>
+      <label for="menutoggle" class="menubtn"><span></span></label>
+    <ul class="menubox">
+        <li><a class="menuitem" href="/Index.html">Inicio</a></li>
+        <li><a class="menuitem" href="/Cannabis.html">Cannabis</a></li>
+        <li><a class="menuitem" href="/Fentanilo.html">Fentanilo</a></li>
+        <li><a class="menuitem" href="/Heroina.html">Heroína</a></li>
+        <li><a class="menuitem" href="/Metanfetamina.html">Metanfetamina</a></li>
+        <li><a class="menuitem" href="/Benzodiacepinas.html">Benzodiacepinas</a></li>
+        <li><a class="menuitem" href="/Tabaco.html">Tabaco</a></li>
+        <li><a class="menuitem" href="/Vapeadores.html">Vapeadores</a></li>
+        <li><a class="menuitem" href="/Alcohol.html">Alcohol</a></li>
+    </ul>
+  </div>
+  <div class="header">
+  <h1>Heroina</h1>
+  <img src="https://as2.ftcdn.net/v2/jpg/02/37/56/89/1000_F_237568932_c1jJp0CAubQsogwVMhStgmOn8hk60raS.jpg" alt="Heroin" class="responsive">
+  </div>
+  <div class="body">
+    <h2 class ="subtitle">¿Qué es?</h2>
+    <p align="justify">La heroína es una droga opiácea (derivada del opio) elaborada a partir de la morfina, una sustancia natural que se extrae de la vaina de semillas de varias plantas de amapola (adormidera) que se cultivan en el sudeste y sudoeste de Asia, en México y en Colombia. La heroína puede presentarse en forma de polvo blanco o marrón, o como una sustancia negra pegajosa que se conoce como "alquitrán negro".</p>
+     <h2 class="subtitle">Origen</h2>
+    <p align="justify">El nombre químico de la heroína es diacetilmorfina. El reporte más antiguo de su descubrimiento data de 1874, cuando el químico inglés C.R.A. Wright la sintetizó a partir de la morfina en la Escuela de Medicina del Hospital St. Mary's de Londres.</p>
+     <div class="header">
+     <img src="https://d55-a.sdn.cz/d_55/c_img_QN_p/OrdIhX.jpeg" alt="Heroin" class="responsive">
+   </div>
+    <h2 class ="subtitle">¿Cómo se consume?</h2>
+    <p align="justify">La heroína se puede inyectar, inhalar, aspirar o fumar. Algunas personas mezclan la heroína con cocaína crack, una práctica que se conoce como "bola rápida" o speedballing.</p>
+    <h2 class ="subtitle">Efectos que produce</h2>
+    <p align="justify">La heroína ingresa con rapidez al cerebro y se adhiere a los receptores opioides de células ubicadas en distintas zonas, especialmente en las que están asociadas con las sensaciones de dolor y placer y las que controlan el ritmo cardíaco, el sueño y la respiración.</p>
+    <h2 class ="subtitle">Efectos a corto plazo</h2>
+    <p align="justify"><strong>Las personas que consumen heroína reportan sentir una euforia o "rush", una oleada de sensaciones placenteras. Sin embargo, la droga tiene otros efectos comunes, entre ellos:</strong></p>
+    <p><strong>-></strong> Sequedad en la boca</p>
+    <p><strong>-></strong> Enrojecimiento de acaloramiento de la piel</p>
+    <p><strong>-></strong> Sensación de pesadez en brazos y piernas</p>
+    <p><strong>-></strong> Náuseas y vómitos</p>
+    <p><strong>-></strong> Comezón intensa</p>
+    <p><strong>-></strong> Enturbiamiento de las facultades mentales</p>
+    <p><strong>-></strong> Alternacipon repetida entre un estadi de vigilia y adormecimiento (estado consciente y semiconsciente)</p>
+    <h2 class ="subtitle">Efectos a largo plazo</h2>
+    <p align="justify"><strong>Las personas que consumen heroína durante mucho tiempo pueden experimentar:</strong></p>
+    <p align="justify"><strong>-></strong> Insomnio</p>
+    <p align="justify"><strong>-></strong> Colapso de las venas en las que se inyecta la droga</p>
+    <p align="justify"><strong>-></strong> Daños en los tejidos de la nariz (en quienes inhalan o aspiran)</p>
+    <p align="justify"><strong>-></strong> Infección del pericardio (membrana que recubre el corazón) o de las válvulas cardíacas</p>
+    <p align="justify"><strong>-></strong> Abscesos (tejido inflamado y con pus)</p>
+    <p align="justify"><strong>-></strong> Estreñimiento y dolores de estómago</p>
+    <p align="justify"><strong>-></strong> Enfermedades del hígado y los riñones</p>
+    <p align="justify"><strong>-></strong> Complicaciones pulmonares, incluida la neumonía</p>
+    <p align="justify"><strong>-></strong> Trastornos mentales como la depresión y el trastorno de personalidad antisocial</p>
+    <p align="justify"><strong>-></strong> Disfunción sexual en los hombres</p>
+    <p align="justify"><strong>-></strong> Ciclos menstruales irregulares en las mujeres</p>
+    <h2 class ="subtitle">Otros efectos potenciales</h2>
+    <p align="justify">La heroína a menudo contiene aditivos como azúcar, almidón o leche en polvo que pueden obstruir los vasos sanguíneos que llegan a los pulmones, al hígado, a los riñones o al cerebro, y causar daños permanentes. Además, compartir los elementos que se utilizan en la inyección de la droga y no pensar con claridad cuando se consume la droga pueden aumentar el riesgo de contraer enfermedades infecciosas como el VIH o la hepatitis (ver "El consumo de drogas inyectables, el VIH y la hepatitis").</p>
+  </div>
+     <footer>
+       
+
+        <p class="P_Foot">Briana Lizbeth Serrano Renteria</p>
+        
+        
+      </footer>
+</body>
+</html>

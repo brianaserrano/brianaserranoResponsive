@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Inicio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.header {
+  padding: 20px;
+  text-align: center;
+  color: #7d2d27;
+  text-align: center;
+}
+
+                
+footer {
+  background-color:#913b34;
+  padding: 10px;
+  text-align: center;
+}
+.body{
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.subtitle{
+  text-align: center;
+  color: #913b34;
+}
+#menutoggle{
+  opacity: 0;
+}
+#menutoggle:checked + .menubtn > span {
+  transform: rotate(45deg);
+}
+#menutoggle:checked + .menubtn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menutoggle:checked + .menubtn > span::after{
+  top: 0;
+  transform: rotate(90deg);
+}
+#menutoggle:checked ~ .menubox {
+  left: 0 !important;
+}
+.menubtn{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menubtn > span, .menubtn > span::before, .menubtn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #616161;
+  transition-duration: .25s;
+}
+.menubtn > span::before{
+  content: '';
+  top: -8px;
+}
+.menubtn > span::after{
+  content: '';
+  top: 8px;
+}
+.menubox {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background: #ECEFF1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menuitem {
+  display: block;
+  padding: 12px 24px;
+  color: #5C4033;
+  font-family: Courier;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menuitem:hover {
+  background: #802222;
+  color: white;
+}
+.container{
+
+                
+                  
+                  top: 10px;
+                  left: 120px;
+                
+}
+.container{
+  
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  padding-top: 56.25%;
+}
+.responsive{
+  max-width: 25%;
+  height: auto;
+}
+.response{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 75%;
+  height: 75%;
+}
+</style>
+</head>
+
+<body style = "font-family: Courier; background: #EADDCA;">
+  <div>
+      <header style="text-align: center; border-color: #705041; border-width: 5px; border-style: none none solid none; padding: 10px; width: 100%;">
+        <h1>CETis No.108</h1>
+        <p><strong>Centro de Estudios Tecnológicos, Industrial y de Servicios No.108</strong></p>
+      </header>
+    </div>
+  <div class="menu">
+    <input id="menutoggle" type="checkbox"/>
+      <label for="menutoggle" class="menubtn"><span></span></label>
+    <ul class="menubox">
+        <li><a class="menuitem" href="/Index.html">Inicio</a></li>
+        <li><a class="menuitem" href="/Cannabis.html">Cannabis</a></li>
+        <li><a class="menuitem" href="/Fentanilo.html">Fentanilo</a></li>
+        <li><a class="menuitem" href="/Heroina.html">Heroína</a></li>
+        <li><a class="menuitem" href="/Metanfetamina.html">Metanfetamina</a></li>
+        <li><a class="menuitem" href="/Benzodiacepinas.html">Benzodiacepinas</a></li>
+        <li><a class="menuitem" href="/Tabaco.html">Tabaco</a></li>
+        <li><a class="menuitem" href="/Vapeadores.html">Vapeadores</a></li>
+        <li><a class="menuitem" href="/Alcohol.html">Alcohol</a></li>
+    </ul>
+  </div>
+<div class="header">
+  <h1>Las drogas y su clasificación</h1>
+  <img src="https://img.freepik.com/free-vector/medications-prescription-disease-treatment-health-care-medical-drugs-pills-bottles-capsules-syringe-with-vaccine-pharmacy-products-vector-isolated-concept-metaphor-illustration_335657-4024.jpg?w=740&t=st=1686614409~exp=1686615009~hmac=a12794b0b1c154a5f4b8d66763aac751ede7933f9257f36213b7c90ef5df6b42" alt="Drugs" class="responsive">
+  <img src="https://cdn-icons-png.flaticon.com/512/2471/2471693.png" alt="Drugs" class="responsive">
+</div>
+<div style="text-align: center; border-color: #705041; border-width: 5px; border-style: none none solid none; padding: 10px; width: 100%;">
+</div>
+<div class="body">
+  <h2 class ="subtitle">Propósito</h2>
+  <p align="justify">Presentar el concepto de droga o sustancia psicoactiva, así como su clasificación con base en los efectos ocasionados en el cuerpo.</p>
+  <h2 class = "subtitle">¿Qué es?</h2>
+ <p align="justify">La Organización Mundial de la Salud (OMS), define el término droga o sustancia psicoactiva como aquel compuesto  de origen natural, semisintético o sintético que produce alguna modificación en una o más funciones en el organismo, sea cual sea la vía de administración.</p>
+  <h2 class="subtitle">Clasificación</h2>
+  <p align="justify"><strong>Actualmente se clasifican por sus efectos en cuatro grandes familias;</strong></p>
+   <p align="justify"><strong>-> Depresores:</strong> Los depresores del SNC (sistema nervioso central) son fármacos que incluyen sedantes, tranquilizantes y medicamentos hipnóticos. Algunos ejemplos son el alprazolam (Xanax®), el eszopiclona (Lunesta®) y el fenobarbital (Luminal®).</p>
+   
+   <p align="justify"><strong>-> Estimulantes:</strong> Los estimulantes son medicamentos que generalmente se emplean para tratar el transtorno por déficit de atención e hiperactividad (TDAH) y narcolepsia, aumentan el estado de alerta, la atención y la energía. Algunos ejemplos son la dextroanfetamina (Dexedrine®), el metilfenidato (Ritalin®, Concerta®) y la combinación de dextroanfetamina y anfetamina (Adderall®).</p>
+   <p align="justify"><strong>-> Alucinógenos:</strong> Los alucinógenos, o "drogas psicodélicas", son sustancias que alteran el estado de conciencia y producen distintos tipos de alucinaciones. Algunos ejemplos son la dietilamida del ácido lisérgico (LSD), la fenciclidina (PCP) y los hongos del género Psilocybe.</p>
+</div>
+<div class="container">
+    <iframe class="response" src="https://www.youtube.com/embed/z9E44yDxIRA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<footer>
+      
+
+        <p class="P_Foot">Briana Lizbeth Serrano Renteria</p>
+        
+        
+      </footer>
+</body>
+</html>

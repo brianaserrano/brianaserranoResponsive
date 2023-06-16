@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tabaco</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.header {
+  padding: 20px;
+  text-align: center;
+  color: #7d2d27;
+  text-align: center;
+}
+
+                
+footer  
+                {
+                  background-color:#913b34;
+                  padding: 10px;
+                  text-align: center;
+                }
+.body{
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.subtitle{
+  text-align: center;
+  color: #913b34;
+}
+#menutoggle{
+  opacity: 0;
+}
+#menutoggle:checked + .menubtn > span {
+  transform: rotate(45deg);
+}
+#menutoggle:checked + .menubtn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menutoggle:checked + .menubtn > span::after{
+  top: 0;
+  transform: rotate(90deg);
+}
+#menutoggle:checked ~ .menubox {
+  left: 0 !important;
+}
+.menubtn{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menubtn > span, .menubtn > span::before, .menubtn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #616161;
+  transition-duration: .25s;
+}
+.menubtn > span::before{
+  content: '';
+  top: -8px;
+}
+.menubtn > span::after{
+  content: '';
+  top: 8px;
+}
+.menubox {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background: #ECEFF1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menuitem {
+  display: block;
+  padding: 12px 24px;
+  color: #5C4033;
+  font-family: Courier;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menuitem:hover {
+  background: #802222;
+  color: white;
+}
+.responsive{
+  max-width: 25%;
+  height: auto;
+}
+</style>
+</head>
+
+<body style = "font-family: Courier; background: #EADDCA;">
+  <div>
+      <header style="text-align: center; border-color: #705041; border-width: 5px; border-style: none none solid none; padding: 10px; width: 100%;">
+        <h1>CETis No.108</h1>
+        <p><strong>Centro de Estudios Tecnológicos, Industrial y de Servicios No.108</strong></p>
+      </header>
+    </div>
+  <div class="menu">
+    <input id="menutoggle" type="checkbox"/>
+      <label for="menutoggle" class="menubtn"><span></span></label>
+    <ul class="menubox">
+        <li><a class="menuitem" href="/Index.html">Inicio</a></li>
+        <li><a class="menuitem" href="/Cannabis.html">Cannabis</a></li>
+        <li><a class="menuitem" href="/Fentanilo.html">Fentanilo</a></li>
+        <li><a class="menuitem" href="/Heroina.html">Heroína</a></li>
+        <li><a class="menuitem" href="/Metanfetamina.html">Metanfetamina</a></li>
+        <li><a class="menuitem" href="/Benzodiacepinas.html">Benzodiacepinas</a></li>
+        <li><a class="menuitem" href="/Tabaco.html">Tabaco</a></li>
+        <li><a class="menuitem" href="/Vapeadores.html">Vapeadores</a></li>
+        <li><a class="menuitem" href="/Alcohol.html">Alcohol</a></li>
+    </ul>
+  </div>
+  <div class="header">
+  <h1>Tabaco</h1>
+  <img src="https://img.freepik.com/free-vector/pack-cigarettes-gas-lighter-ashtray_1441-4240.jpg?w=740&t=st=1686618606~exp=1686619206~hmac=307af18a955936966497328db5f9fbf0d9e483fb50d8724f540f6a357fca7d70" alt="Tobacco" class="responsive">
+  </div>
+  <div class="body">
+    <h2 class ="subtitle">¿Qué es?</h2>
+    <p align="justify">El tabaco es una planta que se cultiva por sus hojas, las cuales se secan y fermentan y luego se usan en varios productos. Contiene nicotina, un ingrediente que puede conducir a la adicción, lo que explica por qué a muchas personas que consumen tabaco les resulta difícil dejar de consumirlo. También contiene muchas otras sustancias químicas potencialmente nocivas, y otras más se generan al quemarlo.</p>
+    <h2 class="subtitle">Origen</h2>
+    <p align="justify">James Buchanan Duke (23 de diciembre de 1856 – 10 de octubre de 1925) fue un empresario estadounidense del sector del tabaco y de la energía eléctrica conocido por ser el introductor del cigarrillo moderno y creador de la moderna industria de la manufactura del tabaco​ y por su vinculación con la Universidad Duke.</p>
+     <div class="header">
+     <img src="https://ichef.bbci.co.uk/news/640/amz/worldservice/live/assets/images/2012/12/11/121211113801__63659432_buckduke.jpg" alt="Tobacco" class="responsive">
+   </div>
+    <h2 class ="subtitle">¿Cómo se consume?</h2>
+    <p align="justify">El tabaco se puede fumar, masticar o aspirar. Los productos para fumar incluyen cigarrillos, cigarros, bidis y cigarrillos de clavo. Algunas personas fuman hojas sueltas de tabaco en pipa o en una pipa de agua llamada narguile o hookah. Los productos que se mascan incluyen el tabaco para mascar, el rapé, el tabaco sin humo (dip) y la pasta húmeda (snus); el rapé también se puede aspirar.</p>
+    <h2 class ="subtitle">Efectos en el cerebro</h2>
+    <p align="justify">Al consumir tabaco en cualquiera de sus formas, la nicotina que contiene se absorbe rápidamente en la corriente sanguínea. Una vez que ingresa a la corriente sanguínea, la nicotina estimula inmediatamente las glándulas adrenales para que liberen la hormona epinefrina (adrenalina). La epinefrina estimula el sistema nervioso central y aumenta la presión arterial, la frecuencia respiratoria y la frecuencia cardíaca. Al igual que sucede con drogas como la cocaína y la heroína, la nicotina aumenta los niveles del neurotransmisor químico llamado dopamina, el cual afecta partes del cerebro que controlan la satisfacción y el placer. Hay estudios que sugieren que otras sustancias químicas presentes en el humo del tabaco, como el acetaldehído, podrían potenciar los efectos de la nicotina en el cerebro.</p>
+    <h2 class ="subtitle">Otros efectos en la salud</h2>
+    <p align="justify">Si bien la nicotina es adictiva, la mayor parte de los efectos graves derivados del consumo de tabaco provienen de otras sustancias químicas. Fumar tabaco puede generar cáncer pulmonar, bronquitis crónica y enfisema. Además, aumenta el riesgo de las enfermedades cardíacas, que pueden llevar a una embolia o un infarto. Fumar también se ha asociado con otros cánceres, leucemia, cataratas, diabetes tipo II y neumonía. Todos estos riesgos corresponden al consumo de cualquier producto que se fuma, incluido el tabaco en hookah. El tabaco sin humo aumenta el riesgo de cáncer, particularmente de cánceres de la boca.</p>
+  </div>
+    <footer>
+    
+
+        <p class="P_Foot">Briana Lizbeth Serrano Renteria</p>
+        
+        
+      </footer>
+</body>
+</html>
